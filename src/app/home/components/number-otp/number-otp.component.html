@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="verify">
+    <div class="title"><h2>Código de Verificación</h2></div>
+    <form action="" [formGroup]="tokenForm">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num1" formControlName="num1">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num2" formControlName="num2">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num3" formControlName="num3">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num4" formControlName="num4">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num5" formControlName="num5">
+      <input type="text" maxlength="1" pattern="[0-9]" required name="num6" formControlName="num6">
+    </form>
+    <button (click)="onVerify()">Verificar</button>
+  </div>
+</div>

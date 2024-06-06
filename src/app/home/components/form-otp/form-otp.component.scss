@@ -1,0 +1,57 @@
+.verify{
+    padding: 2rem 0;
+}
+.title{
+    text-align: center;
+    h1{
+        font-size: 3.8rem;
+    }
+    p{
+        width: 40%;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+}
+
+
+.form_verify{
+    width: 50%;
+    margin: 2rem auto;
+    border: 1px solid #d1d5db;
+}
+
+form{
+    padding: 2rem;
+    .form_group_col{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
+    input{
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #d1d5db;
+    }
+
+    input[type="submit"]{
+        background-color: black;
+        border: none;
+        color: white;
+        font-weight: bold;
+        margin-top: 2rem;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+}
+
+.message{
+    text-align: center;
+    background-color: rgb(6, 240, 6);
+    width: 50%;
+    margin:0 auto;
+}
+
+.error {
+    background-color: red;
+}

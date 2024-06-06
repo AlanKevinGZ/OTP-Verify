@@ -1,0 +1,17 @@
+
+<div class="container" *ngIf="employeesList">
+    <div class="header">
+      <h1>{{ employeesList.businessname }}</h1>
+      <p>RUC: {{ employeesList.ruc }}</p>
+      <button (click)="logout()" class="logout-button">Logout</button>
+    </div>
+    <div class="subsidiaries">
+      <h2>Subsidiarias</h2>
+      <div *ngFor="let subsidiary of employeesList.subsidiaries" class="subsidiary-card">
+        <h3>{{ subsidiary.commercial_name }}</h3>
+        <p><strong>Dirección:</strong> {{ subsidiary.address }}</p>
+        <p><strong>Código:</strong> {{ subsidiary.code }}</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,44 @@
+<section class="verify">
+    <div class="container">
+        <div class="title">
+            <h1>Verify your identity</h1>
+            <p>Enter your personal details and we'll send you a one-time code.</p>
+        </div>
+
+        <div class="form_verify">
+            <form action="" [formGroup]="formSend" (submit)="senOtp()">
+                <div class="form_group_col">
+                    <div class="name">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" formControlName="nombre" name="nombre">
+                        <div *ngIf="formSend.get('nombre')?.invalid && (formSend.get('nombre')?.dirty || formSend.get('nombre')?.touched)">
+                            <small *ngIf="formSend.get('nombre')?.errors?.['required']">First name is required</small>
+                        </div>
+                    </div>
+                    <div class="name">
+                        <label for="last">Last Name</label>
+                        <input type="text" id="last" formControlName="last" name="last">
+                        <div *ngIf="formSend.get('last')?.invalid && (formSend.get('last')?.dirty || formSend.get('last')?.touched)">
+                            <small *ngIf="formSend.get('last')?.errors?.['required']">Last Name required</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <div class="phone">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" formControlName="phone" name="phone">
+                        <div *ngIf="formSend.get('phone')?.invalid && (formSend.get('phone')?.dirty || formSend.get('phone')?.touched)">
+                            <small *ngIf="formSend.get('phone')?.errors?.['required']">Phone Number is required</small>
+                        </div>
+                          
+                    </div>
+                   
+                </div>
+                <input type="submit" value="Send OTP" >
+            </form>
+        </div>
+        <p class="message" [ngClass]="{ 'success': status, 'error': !status }" *ngIf="message">{{ message }}</p>
+    </div>
+</section>
+

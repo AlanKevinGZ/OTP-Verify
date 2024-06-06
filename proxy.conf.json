@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://test.wanqara.com",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
