@@ -1,3 +1,12 @@
+# Proyect Data
+
+Base_url: https://test.wanqara.com/api
+Send code: GET http://test.wanqara.com/api/send-code
+Verify code: POST https://test.wanqara.com/api/verify-code?code=xxxxxx
+RUC: GET https://test.wanqara.com/api/ruc/{ruc}
+El ruc que debe ser enviado para obtener resultado: 1234567890001
+OTP VERIFY: 123123
+
 # Wizard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
